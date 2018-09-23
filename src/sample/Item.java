@@ -13,6 +13,7 @@ public interface Item {
 
   //A constant String variable serving as the manufacturer of all products in this application
   final String manufacturer = "OracleProduction";
+  
 
   public void setProductionNumber(int productionNumber);
 
