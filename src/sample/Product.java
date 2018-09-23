@@ -1,7 +1,15 @@
+//====================================================
+//Author: Carlos Reyes
+//Latest Update: 09/22/18
+//This file contains the fields and methods for
+//"Product" instances
+//====================================================
+
 package sample;
 
 import java.util.Date;
 
+//Utilizing elements from the Item class
 abstract class Product implements Item {
 
 int serialNumber;
@@ -11,15 +19,21 @@ String name;
 Integer currentProductionNumber;
 
 Product(String name) {
+  //Sets this class' name variable to the inputted argument of the Product constructor
   this.name = name;
+  //Sets the serial number to be the current next number in the sequence
   serialNumber = currentProductionNumber;
+  //Increments the current production number to be ready for the next product's serial number
   currentProductionNumber++;
+  //Instanciates a Date object that grabs the date and time of this operation
   Date currentDate = new Date();
+  //Takes the date information created by the instantiation and formats it as a string
   manufacturedOn = currentDate.toString();
 }
 
 public String toString() {
 
+  //Prints out the information stored for a instance of the Product class
   return "Manufacturer  : " + manufacturer + "\n"
        + "Serial Number : " +  serialNumber + "\n"
        + "Date          : " + manufacturedOn + "\n"
@@ -29,7 +43,7 @@ public String toString() {
 }
 
 /*
-Manufacturer  : OraclProduction
+Manufacturer  : OracleProduction
 Serial Number : 1
 Date          : Thu May 14 15:18:43 BST 2015
 Name          : Product Name

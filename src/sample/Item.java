@@ -1,9 +1,17 @@
+//====================================================
+//Author: Carlos Reyes
+//Latest Update: 09/22/18
+//This file is an interface containing fields and
+//methods pertaining to item specifications
+//====================================================
+
 package sample;
 
 import java.util.Date;
 
 public interface Item {
 
+  //A constant String variable serving as the manufacturer of all products in this application
   final String manufacturer = "OracleProduction";
 
   public void setProductionNumber(int productionNumber);
