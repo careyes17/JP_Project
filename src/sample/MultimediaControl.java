@@ -1,18 +1,21 @@
 //====================================================
 //Author: Carlos Reyes
 //Latest Update: 09/22/18
-//This file contains the "main" method of this program
+//This file is contains multimedia controls for
+//devices to implement
 //Copyright (C) 2018 Carlos Reyes, All Rights Reserved
 //====================================================
 
 package sample;
 
+public interface MultimediaControl {
 
-public class Main {
+  public void play();
 
+  public void stop();
 
-  public static void main(String[] args) {
+  public void previous();
 
-  }
+  public void next();
 
 }

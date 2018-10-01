@@ -3,6 +3,7 @@
 //Latest Update: 09/22/18
 //This file is an interface containing fields and
 //methods pertaining to item specifications
+//Copyright (C) 2018 Carlos Reyes, All Rights Reserved
 //====================================================
 
 package sample;
