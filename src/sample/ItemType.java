@@ -9,10 +9,17 @@ package sample;
 
 public enum ItemType {
 
-  AU,
-  VI,
-  AM,
-  VM
+  AUDIO("AU"),
+  VISUAL("VI"),
+  AUDIOMOBILE("AM"),
+  VISUALMOBILE("VM");
+
+  String type;
+
+  ItemType(String type) {
+    this.type = type;
+  }
+
 
 }
 
