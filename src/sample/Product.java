@@ -14,7 +14,7 @@ import java.util.Date;
 abstract class Product implements Item {
 
   int serialNumber;
-  String manufacturer = "OraclProduction";
+  String manufacturer = "OracleProduction";
   Date manufacturedOn;
   String name;
   static int currentProductionNumber = 0;
@@ -29,6 +29,32 @@ abstract class Product implements Item {
     currentProductionNumber++;
     //Instanciates a Date object that grabs the date and assigns it
     manufacturedOn = new Date();
+  }
+
+  //** Bug found here concerning functionality desired by the program **
+  public void setProductionNumber(int productionNumber) {
+    currentProductionNumber = productionNumber;
+  }
+
+  /**
+   * Sets the input name as the name of the widget
+   *
+   * @param name input name of the widget
+   */
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public Date getManufactureDate() {
+    return manufacturedOn;
+  }
+
+  public int getSerialNumber() {
+    return serialNumber;
   }
 
   /**
