@@ -14,7 +14,7 @@ import java.util.Date;
 abstract class Product implements Item {
 
   int serialNumber;
-  String manufacturer;
+  String manufacturer = "OraclProduction";
   Date manufacturedOn;
   String name;
   static int currentProductionNumber = 0;
@@ -25,6 +25,7 @@ abstract class Product implements Item {
     //Sets the serial number to be the current next number in the sequence
     serialNumber = currentProductionNumber;
     //Increments the current production number to be ready for the next product's serial number
+    //** Bug found here concerning an instruction given by the assignment **
     currentProductionNumber++;
     //Instanciates a Date object that grabs the date and assigns it
     manufacturedOn = new Date();
