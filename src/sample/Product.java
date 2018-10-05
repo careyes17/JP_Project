@@ -14,7 +14,7 @@ import java.util.Date;
 abstract class Product implements Item {
 
   int serialNumber;
-  String manufacturer = "OracleProduction";
+  String manufacturer = Item.manufacturer;
   Date manufacturedOn;
   String name;
   static int currentProductionNumber = 0;
