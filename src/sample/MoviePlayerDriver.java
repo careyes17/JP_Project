@@ -1,3 +1,9 @@
+//====================================================
+//Author: Carlos Reyes
+//Latest Update: 11/12/18
+//This file is a driver for the class "MoviePlayer"
+//====================================================
+
 package sample;
 
 import static sample.MonitorType.LCD;

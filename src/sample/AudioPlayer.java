@@ -1,3 +1,10 @@
+//====================================================
+//Author: Carlos Reyes
+//Latest Update: 11/12/18
+//This file contains the fields and methods for
+//"AudioPlayer" instances
+//====================================================
+
 package sample;
 
 
@@ -34,7 +41,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   /**
    * Converts values of AudioPlayer attributes to a String.
-   *
    * @return Returns audioSpecification and mediaType in a String format
    */
   public String toString() {

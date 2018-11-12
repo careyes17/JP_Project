@@ -3,7 +3,6 @@
 //Latest Update: 09/22/18
 //This file contains the fields and methods for
 //"Product" instances
-//Copyright (C) 2018 Carlos Reyes, All Rights Reserved
 //====================================================
 
 package sample;

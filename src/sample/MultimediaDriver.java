@@ -1,6 +1,12 @@
+//====================================================
+//Author: Carlos Reyes
+//Latest Update: 11/12/18
+//This file is a driver for the class
+//"MultimediaControl"
+//====================================================
+
 package sample;
 
-import static sample.ItemType.AUDIO;
 import static sample.MonitorType.LCD;
 
 public class MultimediaDriver implements MultimediaControl {

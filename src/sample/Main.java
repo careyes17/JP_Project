@@ -1,3 +1,10 @@
+//====================================================
+//Author: Carlos Reyes
+//Latest Update: 11/12/18
+//This file contains main method of this program with
+//testing elements
+//====================================================
+
 package sample;
 
 import java.util.ArrayList;

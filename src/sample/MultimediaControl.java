@@ -1,9 +1,8 @@
 //====================================================
 //Author: Carlos Reyes
-//Latest Update: 09/22/18
-//This file is contains multimedia controls for
-//devices to implement
-//Copyright (C) 2018 Carlos Reyes, All Rights Reserved
+//Latest Update: 11/12/18
+//This file is an interface containing fields and
+//methods pertaining to multimedia control
 //====================================================
 
 package sample;

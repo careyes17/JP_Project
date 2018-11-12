@@ -1,3 +1,10 @@
+//====================================================
+//Author: Carlos Reyes
+//Latest Update: 11/12/18
+//This file contains the fields and methods for
+//"MoviePlayer" instances
+//====================================================
+
 package sample;
 
 public class MoviePlayer extends Product implements MultimediaControl {

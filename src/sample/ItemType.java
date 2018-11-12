@@ -3,7 +3,6 @@
 //Latest Update: 09/22/18
 //This file is contains the enum "ItemType" with
 //various classifications
-//Copyright (C) 2018 Carlos Reyes, All Rights Reserved
 //====================================================
 
 package sample;
