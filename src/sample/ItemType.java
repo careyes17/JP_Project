@@ -18,8 +18,7 @@ public enum ItemType {
   String type;
 
   /**
-   * Sets the indicated format type as the type
-   *
+   * Sets the indicated format type as the type.
    * @param type type of format
    */
   ItemType(String type) {

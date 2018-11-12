@@ -11,13 +11,13 @@ package sample;
 import java.util.Date;
 
 //Utilizing elements from the Item class
-abstract class Product implements Item {
+abstract class Product implements Item, Comparable<Product> {
 
   int serialNumber;
   String manufacturer = Item.manufacturer;
   Date manufacturedOn;
   String name;
-  static int currentProductionNumber = 0;
+  static int currentProductionNumber = 1;
 
   Product(String name) {
     //Sets this class' name variable to the inputted argument of the Product constructor
@@ -37,7 +37,7 @@ abstract class Product implements Item {
   }
 
   /**
-   * Sets the input name as the name of the widget
+   * Sets the input name as the name of the widget.
    *
    * @param name input name of the widget
    */
@@ -58,39 +58,36 @@ abstract class Product implements Item {
   }
 
   /**
-   * Prints a product instance's information to the console
+   * Prints a product instance's information to the console.
    *
    * @return information regarding manufacturer, serialNumber, manufacturedOn, and name to the
-   * console.
+   *     console.
    */
   public String toString() {
 
-    //Prints out the information stored for a instance of the Product class
-    return "Manufacturer  : " + manufacturer + "\n"
-        + "Serial Number : " + serialNumber + "\n"
-        + "Date          : " + manufacturedOn + "\n"
-        + "Name          : " + name;
+    return
+        "Manufacturer : " + manufacturer + "\n" + "Serial Number : " + serialNumber + "\n"
+            + "Date : " + manufacturedOn + "\n" + "Name : " + name + "\n";
   }
 
+  /*
+  Manufacturer  : OracleProduction
+  Serial Number : 1
+  Date          : Thu May 14 15:18:43 BST 2015
+  Name          : Product Name
+ */
+
+  /*
+  Add a constructor that will take in the name of the product and set this to the field
+  variable name. You will also assign a serial number from the currentProductionNumber.
+  The currentProductionNumber should be incremented in readiness for the next instance.
+  Set manufacturedOn as the current date and time.
+ */
+
+  /*
+  int serialNumber
+  String manufacturer
+  Date manufacturedOn
+  String name
+  */
 }
-
-/*
-Manufacturer  : OracleProduction
-Serial Number : 1
-Date          : Thu May 14 15:18:43 BST 2015
-Name          : Product Name
- */
-
-/*
-Add a constructor that will take in the name of the product and set this to the field variable name.
-You will also assign a serial number from the currentProductionNumber.
-The currentProductionNumber should be incremented in readiness for the next instance.
-Set manufacturedOn as the current date and time.
- */
-
-/*
- int serialNumber
- String manufacturer
- Date manufacturedOn
- String name
- */

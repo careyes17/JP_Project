@@ -1,62 +1,59 @@
-//====================================================
-//Author: Carlos Reyes
-//Latest Update: 09/22/18
-//This file contains the "main" method of this program
-//Copyright (C) 2018 Carlos Reyes, All Rights Reserved
-//====================================================
-
 package sample;
 
-
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
 
-  public static void main(String args[]) {
+  /**
+   * Main driver method that involves all elements of this project.
+   */
+  public static void main(String[] args) {
 
-    Widget w1 = new Widget("Widget 1");
-    System.out.println(w1.toString());
-    Widget w2 = new Widget("Widget 2");
-    System.out.println(w2.toString());
-
-    for (ItemType it : ItemType.values()) {
-      System.out.println(it + " " + it.type);
-    }
-
+    // Write one line of code to create an ArrayList of products
+    List<Product> al = new ArrayList<Product>();
+    // Write one line of code to call testCollection and assign the result to the ArrayList
+    al = testCollection();
+    // Write one line of code to sort the ArrayList
+    Collections.sort(al);
+    // Call the print method on the ArrayList
+    print(al);
   }
 
-}
-
-class Widget extends Product {
-
-  public Widget(String name) {
-    super(name);
-  }
-
-  //** Bug found here concerning functionality desired by the program **
-  public void setProductionNumber(int productionNumber) {
-    currentProductionNumber = productionNumber;
-  }
+  // Step 15
+  // Complete the header for the testCollection method here
 
   /**
-   * Sets the input name as the name of the widget
+   * This method compiles a list of objects from different classes of this program.
    *
-   * @param name input name of the widget
+   * @return Returns the ArrayList "products" that contains the test objects for this program
    */
-  public void setName(String name) {
-    this.name = name;
+  public static ArrayList<Product> testCollection() {
+
+    AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
+    AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
+    MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
+        new Screen(" 720x480", 40, 22), MonitorType.LCD);
+    MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
+        new Screen("1366x768", 40, 22), MonitorType.LED);
+
+    ArrayList<Product> products = new ArrayList<Product>();
+
+    products.add(a1);
+    products.add(a2);
+    products.add(m1);
+    products.add(m2);
+    return products;
   }
 
-  public String getName() {
-    return name;
-  }
+  // Step 16
+  // Create print method here
+  private static <T> void print(List<T> sortedList) {
 
-  public Date getManufactureDate() {
-    return manufacturedOn;
-  }
-
-  public int getSerialNumber() {
-    return serialNumber;
+    for (T p : sortedList) {
+      System.out.println(p);
+    }
   }
 
 }
