@@ -20,4 +20,4 @@ This program is simply meant to use the "Main" class to for its main functionali
 The best way to go about contributing to this project would be by forking this repository, cloning it in your IDE of choice (I would recommend working with this repo on IntelliJ), committing/pushing your changes to your fork, and making a pull request that describes your contribution(s).
 
 ### License
-Under the MIT license, anyone can take the implementation of my code, make it their own, and do as they please.
+Under the MIT license, anyone can take the implementation of my code, make it their own, and do as is described by the MIT license.
