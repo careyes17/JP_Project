@@ -1,17 +1,25 @@
 # JP_Project
 
 ### Description
-This projects showcases the object oriented concepts that I am learning in COP 3003 (Object Oriented Programming).
+This projects showcases the object oriented concepts that I am learned in COP 3003 (Object Oriented Programming).
 This program allows the user to manipulate variables in the various stages of the manufacturing process.
 
 ### Table of Contents
+- [Demonstration](#demonstration)
+- [Documentation](#documentation)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
+### Demonstration
+![Command Line Demonstration of Product](JP_Project/JP_Project_Demonstration.gif)
+
+### Documentation
+[Program Documentation](https://github.com/careyes17/JP_Project/blob/master/docs/index.html)
+
 ### Installation 
-While the documents contained in this project are able to be implemented in any Java IDE, it is most simple to clone this repository on IntelliJ, the IDE I used to develop this application.
+While the documents contained in this project are able to be implemented in any Java IDE, it is most simple to clone this repository on the IntelliJ IDE, the IDE that I used to develop this application. To run this program, the user simply needs to run the driver method in the "Main" class.
 
 ### Usage
 This program is simply meant to use the "Main" class to for its main functionality. There are however driver classes that were, and can be used, for debugging.
