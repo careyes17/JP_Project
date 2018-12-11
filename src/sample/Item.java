@@ -26,7 +26,7 @@ public interface Item {
 }
 
 /*
- A constant called manufacturer that would be set to “OracleProduction”.
+ A constant called manufacturer that would be set to "OracleProduction".
  A method setProductionNumber that would have one integer parameter
  A method setName that would have one String parameter
  A method getName that would return a String
