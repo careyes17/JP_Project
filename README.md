@@ -13,10 +13,10 @@ This program allows the user to manipulate variables in the various stages of th
 - [License](#license)
 
 ### Demonstration
-![Command Line Demonstration of Product](JP_Project/JP_Project_Demonstration.gif)
+![Command Line Demonstration of Product](JP_Project_Demonstration.gif)
 
 ### Documentation
-[Program Documentation](https://github.com/careyes17/JP_Project/blob/master/docs/index.html)
+[Program Documentation](https://careyes17.github.io/JP_Project/)
 
 ### Installation 
 While the documents contained in this project are able to be implemented in any Java IDE, it is most simple to clone this repository on the IntelliJ IDE, the IDE that I used to develop this application. To run this program, the user simply needs to run the driver method in the "Main" class.
