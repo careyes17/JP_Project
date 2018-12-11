@@ -7,7 +7,7 @@
 
 package sample;
 
-
+//checkstyle and findbugs error noted - intentional according to project specifications
 public class AudioPlayer extends Product implements MultimediaControl {
 
   private String audioSpecification;
@@ -41,6 +41,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   /**
    * Converts values of AudioPlayer attributes to a String.
+   *
    * @return Returns audioSpecification and mediaType in a String format
    */
   public String toString() {

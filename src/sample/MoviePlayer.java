@@ -7,6 +7,7 @@
 
 package sample;
 
+//checkstyle and findbugs error noted - intentional according to project specifications
 public class MoviePlayer extends Product implements MultimediaControl {
 
   private Screen screenType;
