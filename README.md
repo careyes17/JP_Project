@@ -7,6 +7,7 @@ This program allows the user to manipulate variables in the various stages of th
 ### Table of Contents
 - [Demonstration](#demonstration)
 - [Documentation](#documentation)
+- [Diagram](#diagram)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -17,6 +18,9 @@ This program allows the user to manipulate variables in the various stages of th
 
 ### Documentation
 [Program Documentation](https://careyes17.github.io/JP_Project/)
+
+### Diagram
+![UML Diagram](UMLDiagram.png)
 
 ### Installation 
 While the documents contained in this project are able to be implemented in any Java IDE, it is most simple to clone this repository on the IntelliJ IDE, the IDE that I used to develop this application. To run this program, the user simply needs to run the driver method in the "Main" class.
